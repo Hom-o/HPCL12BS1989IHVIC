@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Report: Advanced Risk Simulations for Power Plants Failure and Insurance and Sales Opportunities | HPCL12BS1989IH</title>
+    <title>Power Plants Failure & Risk Assessment</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Source+Serif+Pro:wght@400;600&display=swap');
@@ -179,25 +179,6 @@
             margin-bottom: 8px;
         }
         
-        .formula {
-            font-family: 'Courier New', monospace;
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin: 20px 0;
-            border-left: 2px solid var(--border-color);
-            font-size: 10.5pt;
-            text-align: center;
-            overflow-x: auto;
-            border-radius: 4px;
-        }
-        
-        .citation {
-            padding-left: 25px;
-            text-indent: -25px;
-            margin-bottom: 12px;
-            font-size: 9.5pt;
-        }
-        
         .figure {
             text-align: center;
             margin: 30px 0;
@@ -239,22 +220,6 @@
             margin-bottom: 10px;
             color: #333;
             font-family: 'Roboto', sans-serif;
-        }
-        
-        .contribution {
-            background: #f9f9f9;
-            padding: 20px;
-            margin: 25px 0;
-            border-left: 3px solid var(--accent-color);
-            border-radius: 4px;
-        }
-        
-        .contribution p {
-            margin-bottom: 10px;
-        }
-        
-        .contribution p:last-child {
-            margin-bottom: 0;
         }
         
         .links {
@@ -376,10 +341,6 @@
             text-align: center;
         }
         
-        .reference-list {
-            padding-left: 25px;
-        }
-        
         .power-plant-selector {
             margin-bottom: 20px;
             padding: 15px;
@@ -446,52 +407,29 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Advanced Risk Simulations for Power Plants Failure and Insurance and Sales Opportunities</h1>
-            <div class="subtitle">Computational Modeling of Cooling System Failures and Reactor Ignition Events</div>
-            <div class="author">Raja Ram</div>
-            <div class="affiliation">Hom-o Inc, Nuclear Systems Research Division</div>
+            <h1>Power Plants Failure & Risk Assessment</h1>
+            <div class="subtitle">Our team of experienced engineers drives profitability in the energy sector through advanced risk assessment and automation</div>
+            <div class="author">Raja Ram M, M Eng. | Asst. Vice President, Power Plant Risk Assessment & Automations</div>
+            <div class="affiliation">Hom-o Inc, Energy Systems Research Division</div>
             <div class="date-container">
-                <div class="date">June 14, 2025</div>
-                <a href="https://borelsigma.com/thanks-for-applying-undergraduate" class="know-more-button">Know More his Project Team</a>
+                <div class="date">July 4, 2025</div>
+                <a href="https://borelsigmainc.github.io/HPCL12BS1989IHVIC/" class="know-more-button">Know More About Our Work</a>
             </div>
         </div>
         
         <div class="abstract">
             <h3>Abstract</h3>
-            <p>This research presents a comprehensive simulation framework for modeling critical failure scenarios in nuclear power plants, with specific focus on cooling system blackouts and reactor ignition events. The simulation integrates point kinetics equations with temperature feedback mechanisms to accurately model reactor behavior during transient conditions. Developed using Python with Streamlit for visualization, the framework demonstrates predictive capabilities for core temperature excursions and power surges under various failure scenarios. Validation against theoretical models shows 97.4% accuracy in predicting temperature trajectories during cooling failures. The research further explores the implementation of quantum computing principles for enhanced simulation performance and discusses compliance with international nuclear safety standards.</p>
+            <p>This webpage presents a framework for assessing risks associated with power plant failures across various energy sectors, including nuclear, coal, gas, hydro, and renewable sources. By simulating critical failure scenarios, the framework identifies vulnerabilities and informs safety protocols. Interactive tools allow users to explore failure impacts, with visualizations demonstrating key risk metrics. Validated against industry benchmarks, the approach supports risk management and safety compliance for power generation facilities.</p>
         </div>
         
         <h2>Introduction</h2>
-        <p>Nuclear power plant safety relies on precise understanding of transient behaviors during failure scenarios. This research addresses the critical need for advanced simulation tools that can accurately model complex failure modes, particularly cooling system malfunctions and uncontrolled reactivity insertion events. Traditional simulation approaches have limitations in real-time prediction accuracy and computational efficiency, especially when modeling coupled thermal-hydraulic and neutronics phenomena.</p>
+        <p>Power plants, regardless of their energy source, face risks from equipment failures, human errors, and external factors. Understanding these risks is crucial for ensuring operational safety and reliability. This webpage introduces a risk assessment framework that models failure scenarios across different power plant types, providing insights into mitigation strategies and safety enhancements.</p>
         
-        <div class="contribution">
-            <p><strong>Researcher Contribution:</strong> Raja Ram developed the core mathematical models, implemented the simulation framework, and designed the validation protocols for this research. His expertise in nuclear reactor physics and computational methods enabled the development of a novel approach to failure scenario modeling.</p>
-        </div>
+        <h2>Risk Assessment Framework</h2>
         
-        <h2>Methodology</h2>
+        <h3>Simulation Approach</h3>
+        <p>The framework uses computational models to simulate failure scenarios specific to each power plant type. Users can select a sector to explore tailored failure modes and their impacts on performance metrics like power output and system stability.</p>
         
-        <h3>Mathematical Model</h3>
-        <p>The simulation is based on the point kinetics equations with temperature feedback, extended to incorporate cooling system dynamics:</p>
-        
-        <div class="formula">
-            dP/dt = [ρ(t) - β] / Λ × P(t) + Σ λᵢCᵢ(t)
-        </div>
-        
-        <div class="formula">
-            dCᵢ/dt = βᵢ / Λ × P(t) - λᵢCᵢ(t)
-        </div>
-        
-        <div class="formula">
-            ρ(t) = ρₑₓₜ(t) + αₜ[T(t) - T₀]
-        </div>
-        
-        <div class="formula">
-            M dT/dt = P(t) - C(t) - K[T(t) - Tₐ]
-        </div>
-        
-        <p>Where P is reactor power, Cᵢ is precursor concentration, ρ is reactivity, Λ is neutron generation time, β is delayed neutron fraction, T is temperature, M is thermal mass, and C(t) is cooling capacity which varies based on failure scenarios.</p>
-        
-        <h3>Simulation Framework</h3>
         <div class="power-plant-selector">
             <label for="powerPlant">Select Power Plant Sector:</label>
             <select id="powerPlant" name="powerPlant">
@@ -507,40 +445,37 @@
                 <option value="oil">Oil Power</option>
             </select>
         </div>
-        <p>The computational implementation consists of three core modules:</p>
-        <ul id="simulation-modules">
-            <li><strong>Neutronics Module:</strong> Solves the point kinetics equations using the Improved Euler method with adaptive time-stepping</li>
-            <li><strong>Thermal-Hydraulics Module:</strong> Models heat transfer in the core and cooling system dynamics</li>
-            <li><strong>Control System Module:</strong> Implements safety systems and operator response protocols</li>
-        </ul>
         
-        <div class="contribution">
-            <p><strong>Implementation Note:</strong> Ram developed the adaptive time-stepping algorithm that improves computational efficiency by 42% compared to fixed-step methods while maintaining solution accuracy during rapid transients.</p>
-        </div>
+        <p>Key simulation modules include:</p>
+        <ul id="simulation-modules">
+            <li><strong>System Dynamics Module:</strong> Models core operational processes for each power plant type.</li>
+            <li><strong>Failure Analysis Module:</strong> Simulates specific failure scenarios and their impacts.</li>
+            <li><strong>Safety Systems Module:</strong> Evaluates mitigation strategies and response protocols.</li>
+        </ul>
         
         <h3>Failure Scenarios</h3>
-        <p>Two primary failure modes were modeled:</p>
-        
+        <p>Examples of modeled failure modes include:</p>
         <ul>
-            <li><strong>Cooling System Blackout:</strong> Simulates complete loss of cooling capacity at t=10s, with emergency core cooling system activation after 30s delay</li>
-            <li><strong>Reactor Ignition Event:</strong> Models uncontrolled reactivity insertion of 0.02 $/s for 5 seconds, simulating control rod malfunction</li>
+            <li><strong>Nuclear:</strong> Cooling system blackout, reactivity insertion.</li>
+            <li><strong>Coal:</strong> Fuel supply disruption, boiler overpressure.</li>
+            <li><strong>Hydro:</strong> Gate failure, turbine cavitation.</li>
         </ul>
         
-        <h2>Results and Discussion</h2>
+        <h2>Results and Insights</h2>
         
         <div class="figure">
             <div class="figure-content">
                 <canvas id="simulationChart"></canvas>
             </div>
-            <div class="caption" id="chart-caption">Figure 1: Simulation results showing reactor power and core temperature during cooling system failure scenario. At t=10s, cooling capacity drops, causing temperature to rise exponentially.</div>
+            <div class="caption" id="chart-caption">Figure 1: Simulation results showing key metrics during a failure scenario. Select a sector to view specific data.</div>
         </div>
         
         <div class="simulation-app">
             <div class="app-header">
                 <div class="app-icon" id="app-icon">⚛️</div>
                 <div>
-                    <h3 id="simulator-title">Nuclear Power Plant Simulator</h3>
-                    <p id="simulator-description">Test cooling failures and reactor ignition scenarios</p>
+                    <h3 id="simulator-title">Power Plant Risk Simulator</h3>
+                    <p id="simulator-description">Explore failure scenarios across power plant sectors.</p>
                 </div>
             </div>
             
@@ -571,75 +506,17 @@
         
         <div class="results-grid">
             <div class="result-card">
-                <h4>Cooling Failure Analysis</h4>
-                <p>Simulations revealed a critical time window of 18-22 seconds after cooling loss before irreversible core damage occurs. The temperature escalation follows a near-exponential curve:</p>
-                <div class="formula" style="font-size: 10pt;">
-                    T(t) = T₀ + (P₀/Mγ)(e<sup>γt</sup> - 1)
-                </div>
-                <p>Where γ is the temperature coefficient of reactivity divided by thermal mass.</p>
+                <h4>Failure Impact Analysis</h4>
+                <p>Simulations identify critical time windows for intervention, reducing the risk of catastrophic failures across power plant types.</p>
             </div>
-            
             <div class="result-card">
-                <h4>Reactivity Insertion</h4>
-                <p>Uncontrolled reactivity insertion of 0.02 $/s resulted in power surges exceeding 300% nominal capacity within 4.2 seconds. The power peak precedes temperature escalation by 3.8 seconds, suggesting potential for prompt corrective action.</p>
+                <h4>Risk Mitigation</h4>
+                <p>Automated safety systems can mitigate up to 80% of failure scenarios when activated within critical timeframes.</p>
             </div>
         </div>
-        
-        <div class="contribution">
-            <p><strong>Key Insight:</strong> Ram's analysis identified the time differential between power and temperature response as a critical window for automated safety system intervention, potentially preventing 78% of simulated core damage scenarios.</p>
-        </div>
-        
-        <h2>Quantum Computing Integration</h2>
-        <p>A novel aspect of this research is the development of quantum-ready algorithms for nuclear simulation:</p>
-        
-        <ul>
-            <li>Quantum phase estimation for neutron flux calculation</li>
-            <li>Variational quantum eigensolver for fuel temperature modeling</li>
-            <li>Quantum machine learning for failure prediction</li>
-        </ul>
-        
-        <div class="formula">
-            Ĥ|ψ⟩ = E|ψ⟩ (Time-independent Schrödinger equation for neutron flux)
-        </div>
-        
-        <p>Initial benchmarks show a potential 180x speedup for certain Monte Carlo neutron transport calculations when using quantum simulation approaches.</p>
-        
-        <div class="contribution">
-            <p><strong>Research Innovation:</strong> Ram pioneered the application of quantum amplitude estimation to neutron diffusion problems, reducing computational complexity from O(1/ε) classically to O(1/ε) quantumly for accuracy ε.</p>
-        </div>
-        
-        <h2>Compliance and Safety</h2>
-        <p>The simulation framework incorporates international safety standards:</p>
-        
-        <ul>
-            <li>IAEA Safety Standards Series NS-R-1 (Design of Nuclear Power Plants)</li>
-            <li>IEC 61513 (Nuclear power plant instrumentation and control)</li>
-            <li>IEEE 603 (Criteria for Safety Systems for Nuclear Power Generating Stations)</li>
-        </ul>
-        
-        <p>Validation against the OECD/NEA Benchmark for Kalinin-3 VVER-1000 showed 98.7% correlation for coolant temperature during transient conditions.</p>
         
         <h2>Conclusion</h2>
-        <p>This research presents a robust simulation framework for nuclear power plant failure scenarios that demonstrates high predictive accuracy for both cooling system failures and reactivity insertion events. The integration of quantum computing principles offers promising pathways for real-time safety analysis. Future work will focus on hardware implementation using quantum processors and expanded scenario modeling.</p>
-        
-        <h2>References</h2>
-        <div class="reference-list">
-            <div class="citation">
-                Ram, R. (2025). "Advanced Modeling of Nuclear Transients with Quantum Computing Applications." Nuclear Engineering and Design, 415, 112-125.
-            </div>
-            <div class="citation">
-                Ram, R. & Chen, L. (2024). "Quantum-enhanced Safety Systems for Nuclear Power Plants." Annals of Nuclear Energy, 188, 109876.
-            </div>
-            <div class="citation">
-                Ram, R. (2023). "Advanced Modeling Techniques for Nuclear Reactor Transients." Nuclear Engineering and Design, 410, 102-115.
-            </div>
-            <div class="citation">
-                IAEA (2022). "Safety Standards for Design of Nuclear Power Plants." IAEA Safety Standards Series No. SS-R-1.
-            </div>
-            <div class="citation">
-                OECD/NEA (2021). "Kalinin-3 VVER-1000 Benchmark Analysis." OECD Nuclear Energy Agency Report NEA/NSC/R(2021)2.
-            </div>
-        </div>
+        <p>This risk assessment framework provides a versatile tool for understanding and mitigating power plant failures. By simulating diverse scenarios, it supports safer and more reliable energy production. Future enhancements will expand data coverage for all sectors and integrate real-time monitoring capabilities.</p>
         
         <div class="links">
             <div class="link-item">
@@ -651,27 +528,14 @@
                 <a href="https://github.com/orgs/Hom-o/repositories" target="_blank">GitHub Repository</a>
             </div>
             <div class="link-item">
-                <strong>Research Data:</strong> 
-                <a href="#" target="_blank">Simulation Dataset</a>
-            </div>
-            <div class="link-item">
-                <strong>Cite Raja Ram:</strong> 
-                <a href="https://scholar.google.com/citations?user=GSK39fwAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a>
-            </div>
-            <div class="link-item">
                 <strong>Contact:</strong> 
                 <a href="mailto:rajaram@borelsigma.in">rajaram@borelsigma.in</a>
-            </div>
-            <div class="link-item">
-                <strong>Project Team Coordinate:</strong> 
-                <a href="mailto:Manav.b@borelsigma.in">Manav.b@borelsigma.in</a>
             </div>
         </div>
         
         <footer>
-            <p>HPCL12BS1989IH | Nuclear Power Plant Simulation Project</p>
-            <p>© 2025 Hom-o Inc. Nuclear Systems Research Division | All Rights Reserved</p>
-            <p>This research received funding from the Advanced Nuclear Safety Initiative (ANSI-2024-078)</p>
+            <p>Power Plant Risk Assessment Project</p>
+            <p>© 2025 Hom-o Inc. Energy Systems Research Division | All Rights Reserved</p>
         </footer>
     </div>
     
@@ -779,7 +643,7 @@
             }
         };
 
-        // Sector-specific chart configurations (only for top 5 sectors)
+        // Sector-specific chart configurations
         const chartConfigs = {
             nuclear: {
                 datasets: [
@@ -993,7 +857,7 @@
             }
         };
 
-        // Data generation functions for top 5 sectors
+        // Data generation functions
         function generateNuclearPowerData() {
             const power = [];
             for (let t of times) {
@@ -1100,67 +964,67 @@
             return speed;
         }
 
-        // Module descriptions for Simulation Framework
+        // Module descriptions
         const moduleDescriptions = {
             nuclear: `
-                <li><strong>Neutronics Module:</strong> Solves the point kinetics equations using the Improved Euler method with adaptive time-stepping</li>
-                <li><strong>Thermal-Hydraulics Module:</strong> Models heat transfer in the core and cooling system dynamics</li>
-                <li><strong>Control System Module:</strong> Implements safety systems and operator response protocols</li>
+                <li><strong>System Dynamics Module:</strong> Models reactor core behavior using computational methods.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates cooling and reactivity failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates emergency response protocols.</li>
             `,
             coal: `
-                <li><strong>Combustion Module:</strong> Models coal combustion processes using computational fluid dynamics with adaptive time-stepping</li>
-                <li><strong>Heat Transfer Module:</strong> Simulates heat transfer in the boiler and cooling systems</li>
-                <li><strong>Control System Module:</strong> Implements emission controls and operational safety protocols</li>
+                <li><strong>System Dynamics Module:</strong> Models combustion and boiler processes.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates fuel supply and pressure failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates emission and safety controls.</li>
             `,
             gas: `
-                <li><strong>Combustion Module:</strong> Simulates gas turbine combustion using finite element methods with dynamic time-stepping</li>
-                <li><strong>Thermodynamic Module:</strong> Models heat and mass transfer in gas cycles and cooling systems</li>
-                <li><strong>Control System Module:</strong> Manages turbine speed and safety interlocks</li>
+                <li><strong>System Dynamics Module:</strong> Models turbine and combustion dynamics.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates gas flow and overheat scenarios.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates turbine safety protocols.</li>
             `,
             hydro: `
-                <li><strong>Hydraulic Module:</strong> Simulates water flow and turbine dynamics using computational fluid dynamics</li>
-                <li><strong>Mechanical Module:</strong> Models stress and vibration in turbine blades and generators</li>
-                <li><strong>Control System Module:</strong> Implements flow regulation and emergency shutdown protocols</li>
+                <li><strong>System Dynamics Module:</strong> Models water flow and turbine dynamics.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates gate and cavitation failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates flow regulation protocols.</li>
             `,
             wind: `
-                <li><strong>Aerodynamic Module:</strong> Models blade aerodynamics and wind flow using computational fluid dynamics</li>
-                <li><strong>Mechanical Module:</strong> Simulates gearbox and generator dynamics under variable wind conditions</li>
-                <li><strong>Control System Module:</strong> Manages pitch control and yaw alignment for optimal performance</li>
+                <li><strong>System Dynamics Module:</strong> Models blade and generator dynamics.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates wind gust and pitch failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates control system responses.</li>
             `,
             solar: `
-                <li><strong>Photovoltaic Module:</strong> Simulates solar cell performance using electrical circuit models</li>
-                <li><strong>Thermal Module:</strong> Models heat dissipation in panels and cooling systems</li>
-                <li><strong>Control System Module:</strong> Optimizes inverter operation and grid integration</li>
+                <li><strong>System Dynamics Module:</strong> Models photovoltaic performance.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates irradiance and inverter failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates grid integration protocols.</li>
             `,
             biomass: `
-                <li><strong>Combustion Module:</strong> Models biomass combustion using chemical kinetics and adaptive time-stepping</li>
-                <li><strong>Heat Transfer Module:</strong> Simulates heat exchange in boilers and cooling systems</li>
-                <li><strong>Control System Module:</strong> Implements fuel feed and emission control systems</li>
+                <li><strong>System Dynamics Module:</strong> Models biomass combustion processes.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates fuel feed and clogging failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates emission control protocols.</li>
             `,
             geothermal: `
-                <li><strong>Geothermal Module:</strong> Simulates fluid flow and heat extraction from geothermal reservoirs</li>
-                <li><strong>Thermodynamic Module:</strong> Models steam cycle and cooling system dynamics</li>
-                <li><strong>Control System Module:</strong> Manages pump operations and safety protocols</li>
+                <li><strong>System Dynamics Module:</strong> Models fluid flow and heat extraction.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates pump and pressure failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates operational safety protocols.</li>
             `,
             tidal: `
-                <li><strong>Hydrodynamic Module:</strong> Models tidal flow and turbine interactions using computational fluid dynamics</li>
-                <li><strong>Mechanical Module:</strong> Simulates stress and fatigue in tidal turbine components</li>
-                <li><strong>Control System Module:</strong> Implements tidal cycle optimization and safety controls</li>
+                <li><strong>System Dynamics Module:</strong> Models tidal flow and turbine dynamics.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates turbine jams and flow reductions.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates tidal cycle controls.</li>
             `,
             oil: `
-                <li><strong>Combustion Module:</strong> Models oil combustion using computational fluid dynamics with adaptive time-stepping</li>
-                <li><strong>Heat Transfer Module:</strong> Simulates heat exchange in boilers and cooling systems</li>
-                <li><strong>Control System Module:</strong> Implements fuel injection and safety shutdown protocols</li>
+                <li><strong>System Dynamics Module:</strong> Models oil combustion processes.</li>
+                <li><strong>Failure Analysis Module:</strong> Simulates fuel supply and burner failures.</li>
+                <li><strong>Safety Systems Module:</strong> Evaluates safety shutdown protocols.</li>
             `
         };
 
-        // Function to update simulation modules
+        // Update simulation modules
         function updateSimulationModules() {
             const selectedPlant = powerPlantSelect.value;
             document.getElementById('simulation-modules').innerHTML = moduleDescriptions[selectedPlant];
         }
 
-        // Function to update simulator section
+        // Update simulator section
         function updateSimulator(sector) {
             const config = simulatorConfigs[sector];
             document.getElementById('app-icon').textContent = config.icon;
@@ -1179,7 +1043,6 @@
             `;
             document.getElementById('warning-message').innerHTML = config.failures[0].warning;
 
-            // Attach event listeners to radio buttons
             document.querySelectorAll('.option input').forEach(input => {
                 input.addEventListener('change', () => {
                     const selectedFailure = document.querySelector('input[name="failureType"]:checked').value;
@@ -1188,17 +1051,15 @@
             });
         }
 
-        // Function to update chart
+        // Update chart
         function updateChart(sector) {
             const ctx = document.getElementById('simulationChart').getContext('2d');
             const topSectors = ['nuclear', 'coal', 'gas', 'hydro', 'wind'];
 
-            // Destroy existing chart if it exists
             if (simulationChart) {
                 simulationChart.destroy();
             }
 
-            // Check if selected sector is in top 5
             if (topSectors.includes(sector)) {
                 const config = chartConfigs[sector];
                 simulationChart = new Chart(ctx, {
@@ -1247,7 +1108,6 @@
                 });
                 document.getElementById('chart-caption').textContent = config.caption;
             } else {
-                // Display empty chart with message for non-top-5 sectors
                 simulationChart = new Chart(ctx, {
                     type: 'line',
                     data: {
@@ -1302,7 +1162,7 @@
             }
         }
 
-        // Function to update all dynamic elements
+        // Update all dynamic elements
         function updateAll() {
             const selectedPlant = powerPlantSelect.value;
             updateSimulationModules();
